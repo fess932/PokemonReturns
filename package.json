@@ -1,0 +1,31 @@
+{
+  "name": "pokemon_returns",
+  "version": "1.0.0",
+  "description": "And all its begins",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "npm run build && webpack-dev-server --port=8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fess932/PokemonReturns.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fess932/PokemonReturns/issues"
+  },
+  "homepage": "https://github.com/fess932/PokemonReturns#readme",
+  "dependencies": {
+    "phaser": "^3.7.1",
+    "raw-loader": "^0.5.1",
+    "webpack": "^4.8.2",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.1.3"
+  }
+}
