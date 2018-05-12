@@ -1,4 +1,4 @@
-import 'phaser'
+import './phaser.min'
 
 var config = {
   type: Phaser.AUTO,
@@ -14,7 +14,7 @@ var config = {
 var game = new Phaser.Game(config)
 
 function preload () {
-  this.load.image('logo', 'assets/logo.png')
+  this.load.image('logo', 'assets/img/logo.png')
 }
 
 function create () {
