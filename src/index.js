@@ -1,10 +1,23 @@
-import './phaser.min'
+import './phaser/phaser.min'
+// var Phaser = require('./phaser.min')
 
-var config = {
+// var width = Math.max(document.documentElement.addclientWidth, window.innerWidth || 0)
+// var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+
+[document.body.scrollHeight, document.documentElement.scrollHeight,
+  document.body.offsetHeight, document.documentElement.offsetHeight,
+  document.body.clientHeight, document.documentElement.clientHeight
+].forEach(function(item, i, arr){
+  alert
+})
+alert('Высота с учетом прокрутки: ' + scrollHeight)
+
+let config = {
   type: Phaser.AUTO,
   parent: 'phaser-example',
-  width: 800,
-  height: 600,
+  width: window.innerWidth,
+  height: window.innerHeight,
+  zoom: 1,
   scene: {
     preload: preload,
     create: create
